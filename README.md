@@ -11,6 +11,9 @@
 ```
 1. Http Header, Body 를 간편하게 처리하기 위해 Spring Annotation 활용
 2. Stateless 한 WebApplication 작성을 위해 데이터 처리 시 DB 활용, 데모 버전 개발 간편화를 위해 Spring Data JPA와 H2 Embedded DB 사용
+  - 콘솔 경로 : http://localhost:8080/console 
+  - jdbc url : jdbc:h2:mem:pokeball
+  - id/pw : admin/admin
 3. 각 Controller, Service, Repository 별 Test 코드 작성
 4. Token 생성 시 공개된 소스코드 참조
   - https://codereview.stackexchange.com/questions/159421/generate-16-digit-unique-code-like-product-serial
