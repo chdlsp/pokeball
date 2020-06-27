@@ -163,7 +163,7 @@ class SendApiControllerTest extends PokeballApplicationTests {
         requestHeader.add("X-ROOM-ID", "Room001");
 
         UriComponentsBuilder builder = UriComponentsBuilder.fromHttpUrl(baseUrl)
-                .pathSegment(newSendInfo.getToken());
+                .queryParam("token", newSendInfo.getToken());
 
         HttpEntity<SendApiRequest> request = new HttpEntity<>(requestHeader);
 

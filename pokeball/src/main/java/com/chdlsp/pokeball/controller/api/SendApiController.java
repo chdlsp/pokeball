@@ -35,8 +35,8 @@ public class SendApiController {
         return sendApiService.create(xUserId, xRoomId, sendApiRequest);
     }
 
-    @GetMapping("{token}")
-    public SendInfoResponse read(@RequestHeader(value = "X-USER-ID") String xUserId, @PathVariable String token) {
+    @GetMapping
+    public SendInfoResponse read(@RequestHeader(value = "X-USER-ID") String xUserId, @RequestParam String token) {
 
         // 토큰 입력값이 존재하지 않는 경우 예외 처리
         if(token == null) {

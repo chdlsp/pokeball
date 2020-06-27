@@ -18,8 +18,8 @@ public class RecvApiController {
     @Autowired
     private RecvApiService recvApiService;
 
-    @PutMapping("{token}")
-    public RecvApiResponse update(@RequestHeader(value = "X-USER-ID") String xUserId, @RequestHeader(value = "X-ROOM-ID") String xRoomId, @PathVariable String token) {
+    @PutMapping
+    public RecvApiResponse update(@RequestHeader(value = "X-USER-ID") String xUserId, @RequestHeader(value = "X-ROOM-ID") String xRoomId, @RequestParam String token) {
 
         // 토큰 입력값이 존재하지 않는 경우 예외 처리
         if(token == null) {
