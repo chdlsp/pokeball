@@ -3,7 +3,7 @@
 ## 사용법
 
 ```
-1. jar 파일 다운로드 : https://drive.google.com/file/d/1Rlrgt6bg4hqONcpAmDJWrRW3xrj93chZ/view?usp=sharing
+1. jar 파일 다운로드 : https://drive.google.com/file/d/1Ww9gUNQKgxHz1I1UWBHt0rV4lcAdv3c9/view?usp=sharing
 2. jar 파일 실행 : java -jar pokeball-0.0.1-SNAPSHOT.jar
 ```
 
@@ -48,7 +48,7 @@ X-ROOM-ID: Room001
 ### 받기
 
 ```
-[REQUEST] PUT /api/recv/G4N
+[REQUEST] PUT /api/recv?token=G4N
 
 X-USER-ID: Test002
 X-ROOM-ID: Room001
@@ -67,7 +67,7 @@ X-ROOM-ID: Room001
 ### 조회
 
 ```
-[REQUEST] GET /api/send/G4N
+[REQUEST] GET /api/send?token=G4N
 
 X-USER-ID: Test001
 X-ROOM-ID: Room001
@@ -76,12 +76,17 @@ X-ROOM-ID: Room001
 
 {
  "created_at":"2020-06-27T14:24:01.408",
- "recv_amt":100.00,
+ "recv_amt":200.00,
  "recv_user_info_vo":
   [
-   {
-    "recv_amt":100.00,"recv_user_id":"test002"
-   }
+    {
+      "recv_amt": 100.00,
+      "recv_user_id": "Test004"
+    },
+    {
+      "recv_amt": 100.00,
+      "recv_user_id": "Test005"
+    }
   ],
  "send_tot_amt":10001.00
 }
