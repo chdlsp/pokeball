@@ -1,9 +1,9 @@
 # payServiceDemo Project
 
 ## 사용법
-
+##### jar 파일 Google Drive Link : https://drive.google.com/file/d/1Ww9gUNQKgxHz1I1UWBHt0rV4lcAdv3c9/view?usp=sharing
 ```
-1. jar 파일 다운로드 : https://drive.google.com/file/d/1Ww9gUNQKgxHz1I1UWBHt0rV4lcAdv3c9/view?usp=sharing
+1. jar 파일 다운로드
 2. jar 파일 실행 : java -jar pokeball-0.0.1-SNAPSHOT.jar
 ```
 
