@@ -5,10 +5,14 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.math.BigDecimal;
+
 @Data
-@NoArgsConstructor
 @AllArgsConstructor
+@NoArgsConstructor
 @Builder
-public class UserOrderInfoApiResponse {
-    private UserApiResponse userApiResponse;
+public class RecvApiResponse {
+
+    private BigDecimal recvAmt;
+
 }

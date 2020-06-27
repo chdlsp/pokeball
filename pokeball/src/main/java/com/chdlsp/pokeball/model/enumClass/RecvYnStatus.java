@@ -5,11 +5,11 @@ import lombok.Getter;
 
 @AllArgsConstructor
 @Getter
-public enum UserStatus {
-    REGISTERED(0, "등록", "사용자 등록상태"),
-    UNREGISTERED(1, "해지", "사용자 해지상태");
+public enum RecvYnStatus {
+    RECEIVED(0, "Y", "뿌리기 수령 완료 상태"),
+    NOT_RECEIVED(1, "N", "뿌리기 수령 전 상태");
 
     private Integer id;
-    private String title;
+    private String value;
     private String description;
 }

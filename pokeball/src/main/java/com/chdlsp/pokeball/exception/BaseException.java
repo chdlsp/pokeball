@@ -2,7 +2,7 @@ package com.chdlsp.pokeball.exception;
 
 import org.springframework.http.HttpStatus;
 
-public class BaseException extends RuntimeException{
+public class BaseException extends RuntimeException {
 
     private HttpStatus httpStatus;
 
