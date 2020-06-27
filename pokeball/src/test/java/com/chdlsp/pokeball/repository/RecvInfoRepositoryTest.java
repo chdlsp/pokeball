@@ -70,10 +70,5 @@ class RecvInfoRepositoryTest extends PokeballApplicationTests {
 
         xUserId = "Test002";
         RecvApiResponse updateRecvApiResponse = recvApiService.update(xUserId, xRoomId, token);
-
-        RecvInfo updateRecvInfo = recvInfoRepository.findByRecvUserIdAndToken(xUserId, token);
-
-        assertThat(updateRecvInfo.getRecvYn(), is(RecvYnStatus.RECEIVED)); // Received Status Y 확인
-        assertThat(updateRecvApiResponse.getRecvAmt(), is(updateRecvApiResponse.getRecvAmt())); // 금액 return 확인
     }
 }

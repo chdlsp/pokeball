@@ -17,6 +17,4 @@ public interface RecvInfoRepository extends JpaRepository<RecvInfo, Long> {
 
     Optional<List<RecvInfo>> findByxRoomIdAndTokenAndRecvYn(String xRoomId, String token, RecvYnStatus recvYnStatus);
 
-    RecvInfo findByRecvUserIdAndToken(String recvUserId, String token);
-
 }

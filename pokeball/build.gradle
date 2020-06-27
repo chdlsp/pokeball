@@ -13,7 +13,15 @@ configurations {
 		extendsFrom annotationProcessor
 	}
 }
+jar {
+	manifest {
+		attributes "Main-Class": "com.chdlsp.pokeball.Application"
+	}
 
+	from {
+		configurations.compile.collect { it.isDirectory() ? it : zipTree(it) }
+	}
+}
 repositories {
 	mavenCentral()
 	maven { url 'https://repo.spring.io/milestone' }
@@ -23,7 +31,6 @@ repositories {
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
 	implementation 'org.springframework.boot:spring-boot-starter-web'
-	implementation 'org.springframework.boot:spring-boot-starter-web-services'
 	implementation('org.apache.httpcomponents:httpclient:4.5')
 	implementation 'junit:junit:4.12'
 
